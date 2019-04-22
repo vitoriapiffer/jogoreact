@@ -107,6 +107,8 @@ export class Jogo extends Component {
     //instancia o tabuleiro e cria as variaveis de status e reinicio de jogo
     return (
       <div className="jogo">
+      <div>
+      <div>{status}</div><br></br>
         <div className="jogo-tabuleiro">
           <Tabuleiro
             quadrados={current}
@@ -114,8 +116,12 @@ export class Jogo extends Component {
           />
           
         </div>
-            <div>{status}</div>
-            <div>{Reinicio}</div>   
+        
+        <div>
+          
+            <div><br></br>{Reinicio}<br></br></div>  
+            </div> 
+            </div>
       </div>
       
         
